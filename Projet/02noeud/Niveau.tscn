@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://cgbvewj5spnge"]
+
+[ext_resource type="PackedScene" uid="uid://b0qgokfhjpul4" path="res://paysage.tscn" id="1_sdggm"]
+[ext_resource type="PackedScene" uid="uid://wit54dsgqbc0" path="res://Projectile.tscn" id="3_pcds7"]
+[ext_resource type="PackedScene" uid="uid://xu6sqvbd8dy3" path="res://Gazon.tscn" id="9_1cxmt"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(3, 0)
+
+[node name="Paysage" parent="." instance=ExtResource("1_sdggm")]
+position = Vector2(-136, -98)
+scale = Vector2(1.4459, 1.29691)
+
+[node name="Gazon" parent="." instance=ExtResource("9_1cxmt")]
+position = Vector2(597, 560)
+
+[node name="Gazon2" parent="." instance=ExtResource("9_1cxmt")]
+position = Vector2(236, 382)
+
+[node name="Gazon3" parent="." instance=ExtResource("9_1cxmt")]
+position = Vector2(1083, 464)
+
+[node name="Gazon4" parent="." instance=ExtResource("9_1cxmt")]
+position = Vector2(240, 86)
+
+[node name="Projectile" parent="." instance=ExtResource("3_pcds7")]
+position = Vector2(-81, 327)
+
+[node name="Projectile2" parent="." instance=ExtResource("3_pcds7")]
+position = Vector2(-23, 494)
+
+[node name="Projectile3" parent="." instance=ExtResource("3_pcds7")]
+position = Vector2(-30, 209)

@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://dvw7pcplr1lqw"]
+
+[ext_resource type="Script" uid="uid://cmnlca5aii2s3" path="res://articulation_héritée.gd" id="1_5lt2a"]
+[ext_resource type="Texture2D" uid="uid://cduloxtbo2sgc" path="res://Foret/Fantasy Forest 1/Fantasy Forest 1/pillar1.png" id="1_xajtt"]
+[ext_resource type="Texture2D" uid="uid://6h2cmwkbq4cr" path="res://Foret/Fantasy Forest 1/Fantasy Forest 1/brick2.png" id="2_utdli"]
+[ext_resource type="Texture2D" uid="uid://8o7dpmbmra4j" path="res://Foret/Fantasy Forest 1/Fantasy Forest 1/bush2.png" id="3_pq8o1"]
+
+[node name="ArticulationHéritée" type="Node2D"]
+position = Vector2(14, -4)
+script = ExtResource("1_5lt2a")
+
+[node name="Epaule" type="Sprite2D" parent="."]
+position = Vector2(222, 262)
+rotation = -0.145424
+scale = Vector2(2.03535, 2.141)
+skew = -0.00835848
+texture = ExtResource("2_utdli")
+
+[node name="Bras" type="Sprite2D" parent="Epaule"]
+position = Vector2(10.4778, -0.306048)
+rotation = 0.151844
+scale = Vector2(0.289562, 0.336228)
+skew = -0.0363301
+texture = ExtResource("1_xajtt")
+offset = Vector2(220, -70)
+
+[node name="Main" type="Sprite2D" parent="Epaule/Bras"]
+position = Vector2(448.091, -126.498)
+rotation = 0.0139626
+scale = Vector2(1.28334, 1.31979)
+skew = 0.00810826
+texture = ExtResource("3_pq8o1")
+offset = Vector2(50, 0)

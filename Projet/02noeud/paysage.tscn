@@ -1,0 +1,69 @@
+[gd_scene load_steps=11 format=3 uid="uid://b0qgokfhjpul4"]
+
+[ext_resource type="Script" uid="uid://bwqlstajjolhn" path="res://paysage.gd" id="1_dqifx"]
+[ext_resource type="Texture2D" uid="uid://c7hx53gwfr2kr" path="res://Foret/Fantasy Forest 1/Fantasy Forest 1/ground1.png" id="1_jegu7"]
+[ext_resource type="Texture2D" uid="uid://d4cvmsm7edcyi" path="res://Foret/Fantasy Forest 1/Fantasy Forest 1/tree2.png" id="2_dqifx"]
+[ext_resource type="Texture2D" uid="uid://dj7k7k68u04qm" path="res://Foret/Fantasy Forest 1/Fantasy Forest 1/grass3.png" id="3_rqjqt"]
+[ext_resource type="Texture2D" uid="uid://b3hosa0ag2u5s" path="res://Foret/Fantasy Forest 1/Fantasy Forest 1/mushroom3.png" id="4_jtwy8"]
+[ext_resource type="Texture2D" uid="uid://drf4btvshygfc" path="res://Foret/Fantasy Forest 1/Fantasy Forest 1/stone7.png" id="5_8sbbg"]
+[ext_resource type="Texture2D" uid="uid://hb2jmet4dp85" path="res://Foret/Fantasy Forest 1/Fantasy Forest 1/plant3.png" id="6_xf1ty"]
+[ext_resource type="Texture2D" uid="uid://cuwyean7hiisb" path="res://Foret/Fantasy Forest 1/Fantasy Forest 1/m_pillar2.png" id="7_qjlnm"]
+[ext_resource type="Texture2D" uid="uid://bbsjilc7e4vcj" path="res://Foret/Fantasy Forest 1/Fantasy Forest 1/bg_top5.png" id="8_qyol7"]
+[ext_resource type="PackedScene" uid="uid://dvw7pcplr1lqw" path="res://Articulation héritée.tscn" id="10_rqjqt"]
+
+[node name="Paysage" type="Node2D"]
+scale = Vector2(1.76264, 1.34418)
+script = ExtResource("1_dqifx")
+
+[node name="Ground1" type="Sprite2D" parent="."]
+position = Vector2(489, 324)
+scale = Vector2(3.27239, 3.28125)
+texture = ExtResource("1_jegu7")
+
+[node name="Tree2" type="Sprite2D" parent="."]
+position = Vector2(747.175, 159.205)
+scale = Vector2(0.933253, 0.540559)
+texture = ExtResource("2_dqifx")
+
+[node name="Grass3" type="Sprite2D" parent="."]
+position = Vector2(119, 514)
+texture = ExtResource("3_rqjqt")
+
+[node name="Mushroom3" type="Sprite2D" parent="."]
+position = Vector2(338, 517)
+scale = Vector2(1.44401, 1.33471)
+texture = ExtResource("4_jtwy8")
+
+[node name="Mushroom4" type="Sprite2D" parent="."]
+position = Vector2(796, 506)
+scale = Vector2(1.84724, 1.33313)
+texture = ExtResource("4_jtwy8")
+
+[node name="Stone7" type="Sprite2D" parent="."]
+position = Vector2(398, 154)
+scale = Vector2(-5.97214, 8.79229)
+texture = ExtResource("5_8sbbg")
+
+[node name="Plant3" type="Sprite2D" parent="."]
+position = Vector2(655, 526)
+texture = ExtResource("6_xf1ty")
+
+[node name="Plant4" type="Sprite2D" parent="."]
+position = Vector2(251, 519)
+scale = Vector2(-1.5713, 1)
+texture = ExtResource("6_xf1ty")
+
+[node name="MPillar2" type="Sprite2D" parent="."]
+position = Vector2(489, 379)
+scale = Vector2(-2.9501, 1.07077)
+texture = ExtResource("7_qjlnm")
+
+[node name="BgTop5" type="Sprite2D" parent="."]
+position = Vector2(489, 302)
+scale = Vector2(0.674422, 0.150192)
+texture = ExtResource("8_qyol7")
+
+[node name="ArticulationHéritée" parent="." instance=ExtResource("10_rqjqt")]
+position = Vector2(191.758, -29.014)
+rotation = 0.0541032
+scale = Vector2(0.732856, 1.11084)

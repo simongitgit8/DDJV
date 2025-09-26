@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://crx27cxydyr12"]
+
+[ext_resource type="Script" uid="uid://b6o0ls6crsnp0" path="res://signal_lamda.gd" id="1_lqcl1"]
+[ext_resource type="Script" uid="uid://04jyn0fvjpxi" path="res://ecouteur.gd" id="2_6cus3"]
+
+[node name="SignalLamda" type="Button"]
+offset_left = 4.0
+offset_top = 0.999954
+offset_right = 12.0
+offset_bottom = 8.99995
+rotation = 1.58225
+scale = Vector2(7.33333, -25.25)
+script = ExtResource("1_lqcl1")
+
+[node name="Ecouteur" type="Node2D" parent="."]
+script = ExtResource("2_6cus3")
+
+[connection signal="pressed" from="." to="Ecouteur" method="_on_signal_lamda_pressed"]

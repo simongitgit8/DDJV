@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://xu6sqvbd8dy3"]
+
+[ext_resource type="Texture2D" uid="uid://bsfr32umoejuh" path="res://Foret/Fantasy Forest 1/Fantasy Forest 1/grass1.png" id="1_gd3te"]
+[ext_resource type="Script" uid="uid://enyiaxra6kag" path="res://Oscillation.gd" id="2_ih25w"]
+
+[node name="Gazon" type="Node2D"]
+
+[node name="Grass1" type="Sprite2D" parent="."]
+position = Vector2(30, -1)
+scale = Vector2(2.13707, 2.90766)
+texture = ExtResource("1_gd3te")
+offset = Vector2(0, -14)
+script = ExtResource("2_ih25w")
+
+[node name="Grass2" type="Sprite2D" parent="."]
+position = Vector2(-67, -54)
+scale = Vector2(-2.09863, 4.0046)
+texture = ExtResource("1_gd3te")
+offset = Vector2(0, -14)
+script = ExtResource("2_ih25w")
+
+[node name="Grass3" type="Sprite2D" parent="."]
+position = Vector2(-31, 18)
+scale = Vector2(2.80112, 3.28954)
+texture = ExtResource("1_gd3te")
+offset = Vector2(0, -14)
+script = ExtResource("2_ih25w")

@@ -1,0 +1,48 @@
+[gd_scene load_steps=5 format=3 uid="uid://cf0ikre5ptfe"]
+
+[ext_resource type="Script" uid="uid://djup1vtsb5nlm" path="res://button_collision_disable.gd" id="1_uubjt"]
+[ext_resource type="Script" uid="uid://b1x2b71xcpxb8" path="res://quitter.gd" id="3_ylpcl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ylpcl"]
+size = Vector2(84.1416, 29.7288)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cx167"]
+size = Vector2(64.4551, 31.2255)
+
+[node name="Menu" type="Node2D"]
+
+[node name="Démarrer" type="Button" parent="."]
+offset_left = 492.0
+offset_top = 290.0
+offset_right = 576.0
+offset_bottom = 321.0
+scale = Vector2(2.29291, 2.25371)
+text = "Démarrer"
+script = ExtResource("1_uubjt")
+
+[node name="Area2D" type="Area2D" parent="Démarrer"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Démarrer/Area2D"]
+position = Vector2(42.3043, 15.5299)
+shape = SubResource("RectangleShape2D_ylpcl")
+debug_color = Color(0.682809, 0.345535, 0.91521, 0.42)
+
+[node name="Quitter" type="Button" parent="."]
+offset_left = 490.0
+offset_top = 392.0
+offset_right = 554.0
+offset_bottom = 423.0
+scale = Vector2(3.12, 2.04)
+text = "Quitter"
+script = ExtResource("3_ylpcl")
+
+[node name="Area2D" type="Area2D" parent="Quitter"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Quitter/Area2D"]
+position = Vector2(31.875, 15.2696)
+shape = SubResource("RectangleShape2D_cx167")
+
+[connection signal="pressed" from="Démarrer" to="Démarrer" method="_on_pressed"]
+[connection signal="area_entered" from="Démarrer/Area2D" to="Démarrer" method="_disable_me"]
+[connection signal="pressed" from="Quitter" to="Quitter" method="_on_pressed"]
+[connection signal="area_entered" from="Quitter/Area2D" to="Quitter" method="_disable_me"]
