@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=3 uid="uid://beyi8pd04pkgn"]
+
+[ext_resource type="Texture2D" uid="uid://b1ipqw7g33fk5" path="res://SpriteKit/ALL SPRITES/Tiles/Fence6_1.png" id="1_7mag4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_51awt"]
+size = Vector2(1251, 38)
+
+[node name="Fences" type="Node2D"]
+
+[node name="Fence61" type="Sprite2D" parent="."]
+position = Vector2(734, -13.9999)
+rotation = 1.57102
+texture = ExtResource("1_7mag4")
+
+[node name="Fence65" type="Sprite2D" parent="."]
+position = Vector2(942, -17)
+rotation = 1.57102
+texture = ExtResource("1_7mag4")
+
+[node name="Fence66" type="Sprite2D" parent="."]
+position = Vector2(1148, -17)
+rotation = 1.57102
+texture = ExtResource("1_7mag4")
+
+[node name="Fence62" type="Sprite2D" parent="."]
+position = Vector2(522, -17)
+rotation = 1.57102
+scale = Vector2(1.0882, 1.05499)
+texture = ExtResource("1_7mag4")
+
+[node name="Fence63" type="Sprite2D" parent="."]
+position = Vector2(310, -19)
+rotation = 1.57102
+scale = Vector2(1.0882, 1.05499)
+texture = ExtResource("1_7mag4")
+
+[node name="Fence64" type="Sprite2D" parent="."]
+position = Vector2(98, -20)
+rotation = 1.57102
+scale = Vector2(1.0882, 1.05499)
+texture = ExtResource("1_7mag4")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(615.5, 9)
+shape = SubResource("RectangleShape2D_51awt")

@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://cb8dhm68hii3d"]
+
+[ext_resource type="Texture2D" uid="uid://o5d6exvu1ujq" path="res://SpriteKit/ground_grass_gen_01.png" id="1_glv2v"]
+[ext_resource type="PackedScene" uid="uid://beyi8pd04pkgn" path="res://fences.tscn" id="2_uu6xs"]
+[ext_resource type="PackedScene" uid="uid://bt8uqwabbw6wt" path="res://Knight.tscn" id="3_r0du0"]
+[ext_resource type="PackedScene" uid="uid://ccobu7j3aauul" path="res://Apparition.tscn" id="4_cm0pq"]
+
+[node name="Main" type="Node2D"]
+
+[node name="GroundGrassGen01" type="Sprite2D" parent="."]
+position = Vector2(578, 326.5)
+scale = Vector2(1.12305, 0.631836)
+texture = ExtResource("1_glv2v")
+
+[node name="Fences" parent="." instance=ExtResource("2_uu6xs")]
+
+[node name="Fences2" parent="." instance=ExtResource("2_uu6xs")]
+position = Vector2(16, 626)
+
+[node name="Fences3" parent="." instance=ExtResource("2_uu6xs")]
+position = Vector2(11, 646)
+rotation = -1.57405
+
+[node name="Fences4" parent="." instance=ExtResource("2_uu6xs")]
+position = Vector2(1146, 637)
+rotation = -1.57594
+
+[node name="Knight" parent="." instance=ExtResource("3_r0du0")]
+position = Vector2(326, 171)
+
+[node name="Apparition" parent="." instance=ExtResource("4_cm0pq")]

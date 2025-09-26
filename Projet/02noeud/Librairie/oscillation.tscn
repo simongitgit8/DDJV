@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dsccawpannlwq"]
+
+[ext_resource type="Script" uid="uid://enyiaxra6kag" path="res://Librairie/Oscillation.gd" id="1_qfsk8"]
+
+[node name="Oscillation" type="Node2D"]
+script = ExtResource("1_qfsk8")
